@@ -1,7 +1,7 @@
-import React, { useState, useReducer } from "react";
+import React, { useReducer } from "react";
 
 import Form from "./components/Form";
-// import People from "./components/People";
+import People from "./components/People";
 import NewestPerson from "./components/NewestPerson";
 
 import PeopleContext from "./context/peopleContext";
@@ -36,8 +36,8 @@ const App = () => {
       <div className="container mt-4">
         <div className="row">
           <Form />
-          {/*<People />
-          <NewestPerson />*/}
+          <People />
+          <NewestPerson />
         </div>
       </div>
     </PeopleContext.Provider>
